@@ -1,0 +1,692 @@
+$imgbg: url("../img/Fondo.jpg");
+
+$colorbg: rgb(255, 196, 0);
+
+@mixin Perfumes1 {
+      width: 1500px;
+  /*     height: 500px;  */
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 25px;
+      margin: 70px 0;
+      text-align: center;
+}
+
+@mixin Perfumes2 {
+  width: 100%;
+  height: 680px; 
+}
+
+
+
+.Foosterimg{
+  width: 80%;
+  height: 80%;
+  object-fit:contain;   
+}
+
+.container-fluid{
+  background-image: url("../img/Navbar.gif"); 
+}
+
+.Redes{
+  width: 10%;
+  height: 10%;
+}
+
+.Portada1{
+  width: 75%;
+  margin-left: 15%;
+}
+
+#carousel{
+  height: auto;
+  width: 75vw;
+  margin-left: 13%;  
+}
+
+#navbarSupportedContent{
+  padding: 2%;  
+  
+}
+
+.navbar-nav{
+  padding-right: 3%;  
+}
+
+.navbar{
+  padding-right: 3%;
+  background-image: url("../img/Navbar.gif");  
+}
+
+#ColorButtonNavbar{
+  color: #e5be01;
+}
+
+
+
+
+body{
+    background-image: $imgbg;
+    font-size: 16px;    
+  }
+  
+  .container-fluid{    
+    font-weight: 300;      
+  }
+  
+  
+  .caja1{
+      width: 1300px;
+  /*     height: 500px;  */
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      margin: 10px 0;
+      text-align: center;
+      margin-left: 10%;
+
+        img{
+            width: 100%;
+            height: 680px;
+            }
+    }
+  
+ 
+
+
+
+
+    .EmprendedoresGlobal{
+      margin-top: 25px;;
+      box-shadow: 2px 4px 10px 5px rgb(255, 174, 0);
+      background-color: rgba(12, 4, 4, 0.582);
+      text-align: center;
+    }  
+
+    .Emprendedorestitulo{
+      margin: 1%;
+      text-align: center;
+  }    
+
+    .Emprendedores0{
+      margin-left: 10%;
+      text-align: center;
+  }    
+
+    .Emprendedores1{
+      width: 1500px;
+  /*     height: 500px;  */
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      margin: 70px 0;
+      text-align: center;
+  
+        img{
+            width: 75%;
+            height: 470px;
+            }
+    }
+  
+  
+  .Emprendedores2{
+      width: 1500px;
+  /*     height: 500px;  */
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      margin: 70px 0;
+      text-align: center;
+  
+        img{
+            width: 75%;
+            height: 470px;
+        }
+    }
+  
+  .Encuesta0{
+    margin-top: 25px;;
+    box-shadow: 2px 4px 10px 5px rgb(255, 174, 0);
+    background-color: rgba(12, 4, 4, 0.582);
+    text-align: center;
+  } 
+
+ 
+
+  .Encuesta {
+      color: rgb(5, 5, 5);
+      background-color: #e5be01;
+    }
+    
+  
+  h1{
+  color: $colorbg;
+  font-style: oblique;
+  font-weight:bolder;
+  font-size: 60px;
+  }
+  
+  h2{
+      color:rgb(243, 248, 197);
+      text-align-last: left; 
+      font-family: 'Fredoka One', cursive;
+  }
+  
+  
+  h3{
+      color:rgb(255, 255, 255);
+      font-family: 'Caveat', cursive;
+      background-color: rgb(29, 27, 27);
+  
+  }
+  
+  
+  p{    
+    font-size: 150%;
+    color:hsl(0, 0%, 100%);
+  }    
+  
+  
+   a:hover{
+       color: rgb(0, 0, 0);
+       background-color: rgb(237, 219, 127);
+       
+      } 
+  
+  input:hover{
+          color: rgb(253, 255, 253);
+          background-color: rgb(160, 156, 133);
+  } 
+
+
+
+
+
+  .contactenos{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;    
+  }
+  
+  .contactenos:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;    
+  }
+  .contactenos2{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(80, 75, 75);
+    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+  }
+  
+  .contactenos3{
+    background: url("../img/Contactenos.jpg") no-repeat center;
+    background-size: cover;
+    height: 100%;
+  }
+  
+  .contactenos4{
+    padding: 25px 40px;
+  }
+  
+  h2{    
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+  }
+  
+  h2:after{
+    content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      height: 4px;
+      width: 50px;
+      border-radius: 2px;
+      background-color: rgb(255, 174, 0);
+  }
+  
+  .contactenos5{
+    width: 100%;
+    border: 2px solid rgb(255, 174, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+  }
+  
+  .contactenos5:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  textarea{
+    min-height: 150px;
+  }
+  
+  .btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color:rgb(255, 174, 0);
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  .btn:hover{
+      background-color: rgb(255, 174, 0);
+  }
+  
+  .contactenos5:focus{
+      border: 2px solid rgb(255, 174, 0);
+      background-color: #fff;
+  }
+  
+  @media screen and (max-width: 880px){
+    .contactenos2{
+      grid-template-columns: 1fr;
+    }
+    .contactenos3{
+      height: 200px;
+    }
+  }
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+  
+  
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+}
+
+.container .heading{
+  width: 50%;
+  padding-bottom: 50px;
+}
+.container .heading h3{
+  font-size: 3em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #222;
+}
+
+.container .heading h3 span{
+  font-weight: 100;
+}
+.container .box{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.container .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.container .box .dream img{
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+.container .btn{
+  margin: 40px 0 70px 0;
+  background: #222;
+  padding: 15px 40px ;
+  border-radius: 5px;
+}
+
+.container .btn a{
+ color: #fff;
+ font-size: 1.2em;
+ text-decoration: none;
+ font-weight: bolder;
+ letter-spacing: 3px;
+}
+@media only screen and (max-width: 576px){
+  .Portada1{
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .caja1{
+    width: 280px;
+/*     height: 500px;  */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 10px 0;
+    text-align: center;
+    margin-left: 10%;
+
+      img{
+          width: 100%;
+          height: auto;
+          }
+  }
+
+  .EmprendedoresGlobal{
+    margin-top: 25px;
+    box-shadow: 2px 4px 10px 5px rgb(255, 174, 0);
+    background-color: rgba(12, 4, 4, 0.582);
+    text-align: center;
+  }  
+
+  .Emprendedorestitulo{
+    margin: 1%;
+    text-align: center;
+}    
+
+  .Emprendedores0{
+    margin-left: 10%;
+    text-align: center;
+}    
+
+  .Emprendedores1{
+    width: 400px;
+/*     height: 500px;  */
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px 0;
+    text-align: center;    
+
+      img{
+          width: 95%;
+          height: 470px;           
+          }
+  }
+
+  .Emprendedores2{
+    width: 400px;
+    /*     height: 500px;  */
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0px 0;
+        text-align: center;
+  
+        img{
+            width: 95%;
+            height: 470px;
+        }
+    }
+    
+    .Foosterimg{
+      width: 120%;
+      height: 90%;
+      object-fit:contain;   
+    }
+
+    .Redes{
+      width: 25%;
+      height: 14%;
+    }
+    
+
+  
+}
+
+@media only screen and (min-width: 576px){
+  .Portada1{
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .caja1{
+    width: 450px;
+/*     height: 500px;  */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 10px 0;
+    text-align: center;
+    margin-left: 10%;
+
+      img{
+          width: 100%;
+          height: auto;
+          }
+  }
+
+  .EmprendedoresGlobal{
+    margin-top: 25px;
+    box-shadow: 2px 4px 10px 5px rgb(255, 174, 0);
+    background-color: rgba(12, 4, 4, 0.582);
+    text-align: center;
+  }  
+
+  .Emprendedorestitulo{
+    margin: 1%;
+    text-align: center;
+}    
+
+  .Emprendedores0{
+    margin-left: 10%;
+    text-align: center;
+}    
+
+  .Emprendedores1{
+    width: 400px;
+/*     height: 500px;  */
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px 0;
+    text-align: center;    
+
+      img{
+          width: 95%;
+          height: 470px;           
+          }
+  }
+
+  .Emprendedores2{
+    width: 400px;
+    /*     height: 500px;  */
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0px 0;
+        text-align: center;
+  
+        img{
+            width: 95%;
+            height: 470px;
+        }
+    }
+    
+    .Foosterimg{
+      width: 120%;
+      height: 90%;
+      object-fit:contain;   
+    }
+
+    .Redes{
+      width: 25%;
+      height: 14%;
+    }
+    
+
+  
+}
+
+@media only screen and (max-width: 769px){
+    .container .box{
+   flex-direction: column;
+  }
+
+.container .box .dream{
+  width: 100%;
+}
+
+
+
+
+
+}
+
+@media only screen and (max-width: 643px){
+.container .heading{
+  width: 100%;
+}
+.container .heading h3{
+  font-size: 1em;
+
+}
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 880px){
+    .contactenos2{
+      grid-template-columns: 1fr;
+    }
+    .contactenos3{
+      height: 200px;
+    }
+}
+
+@media only screen and (min-width: 992px){
+  .Portada1{
+    width: 90%;
+    margin-left: 4%;
+  }    
+
+  .caja1{
+    width: 850px;
+/*     height: 500px;  */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 10px 0;
+    text-align: center;
+    margin-left: 7%;
+
+      img{
+          width: 100%;
+          height: auto;
+          }
+  }
+
+  .EmprendedoresGlobal{
+    margin-top: 25px;;
+    box-shadow: 2px 4px 10px 5px rgb(255, 174, 0);
+    background-color: rgba(12, 4, 4, 0.582);
+    text-align: center;
+  }  
+
+  .Emprendedorestitulo{
+    margin: 1%;
+    text-align: center;
+}    
+
+  .Emprendedores0{
+    margin-left: 0%;
+    text-align: center;
+}    
+
+  .Emprendedores1{
+    width: 1200px;
+/*     height: 500px;  */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;    
+    text-align: center;
+
+      img{
+          width: 75%;
+          height: 470px;
+          }
+  }
+
+
+.Emprendedores2{
+    width: 1200px;
+/*     height: 500px;  */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 70px 0;
+    text-align: center;
+
+      img{
+          width: 75%;
+          height: 470px;
+      }
+  }
+
+  .Foosterimg{
+    width: 80%;
+    height: 80%;
+    object-fit:contain;   
+  }
+  
+  .Redes{
+    width: 10%;
+    height: 10%;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+
+  .caja1{
+    width: 1100px;
+/*     height: 500px;  */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 20px 0;
+    text-align: center;
+    margin-left: 8%;
+
+      img{
+          width: 100%;
+          height: auto;
+          }
+  }
+}
