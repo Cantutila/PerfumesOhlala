@@ -2,207 +2,367 @@ $imgbg: url("../img/Fondo.jpg");
 
 $colorbg: rgb(255, 196, 0);
 
-@mixin Perfumes1 {
-      width: 1500px;
-  /*     height: 500px;  */
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 25px;
-      margin: 70px 0;
-      text-align: center;
+html{
+  user-select: none;
 }
-
-@mixin Perfumes2 {
-  width: 100%;
-  height: 680px; 
+body{
+    background-image: $imgbg;
+    font-size: 16px;    
 }
+h1{
+    color: $colorbg;
+    font-style: oblique;
+    font-weight:bolder;
+    font-size: 60px;
+}      
+h3{
+  color:rgb(197, 191, 191);
+  font-family: 'Caveat', cursive;
+  background-color: rgb(29, 27, 27);  
+}   
+a:hover{ 
+        border-radius: 20px 40px;
+        background: #e5be01;
+        box-shadow: 0 0 5px #6c757d, 0 0 25px #6c757d, 0 0 50px #6c757d, 0 0 200px #6c757d;
+}     
+input:hover{
+            color: rgb(253, 255, 253);
+            background-color: rgb(160, 156, 133);
+} 
 
 
 
-.Foosterimg{
-  width: 80%;
-  height: 80%;
-  object-fit:contain;   
+// *NAVBAR* //
+#navbarSupportedContent{
+  padding: 2%;  
+  font-size: 1.5em;
 }
-
-.container-fluid{
-  background-image: url("../img/Navbar.gif"); 
+.navbar-nav{
+  padding-right: 3%;  
 }
-
-.Redes{
-  width: 10%;
-  height: 10%;
+.navbar{
+  padding-right: 3%;
+  background-image: url("../img/Navbar.gif");  
+  position: sticky; 
+  top: 0;
 }
+// *NAVBAR FIN* //
 
+
+
+// *CAROUSEL* //
 .Portada1{
-  width: 75%;
-  margin-left: 15%;
+  width: 100%;
+  margin: 0% auto;
 }
-
 #carousel{
   height: auto;
   width: 75vw;
   margin-left: 13%;  
 }
+.animate__animated{
+  font-family: 'Lobster', cursive;    
+  font-size: 1.6em;  
+}
+// *CAROUSEL FIN* //
 
-#navbarSupportedContent{
-  padding: 2%;  
+
+  //* BARRA SCROLL *//
+::-webkit-scrollbar{
+  width: 13px;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(45deg, #e5be01, #ff5520, #F21365);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track{
+  background: #6c757d;
+  border-radius: 3px;
+}
+//* BARRA SCROLL FIN*//
+
   
+// *WHATSAPP* //
+#reservaAhora{
+  position: fixed;
+  display: inline-block;  
 }
-
-.navbar-nav{
-  padding-right: 3%;  
+#reservaAhora{
+  right: 3vh;
+  bottom: 18vh;
+  height: 8vh;
 }
-
-.navbar{
-  padding-right: 3%;
-  background-image: url("../img/Navbar.gif");  
+#reservaAhora:hover {
+  transform: scale(1.5);
+  transition: 1s;
 }
-
-#ColorButtonNavbar{
-  color: #e5be01;
-}
+// *WHATSAPP FIN* //
 
 
-
-
-body{
-    background-image: $imgbg;
-    font-size: 16px;    
+// *FOOTER* //
+footer {
+  position: absolute;
+  width: 100%;
+  padding-left: 1vw;
+  background-image: url("../img/Navbar.gif"); 
+  color:#6c757d;
+  .navbar-brand img {
+      width: 150px; 
   }
-  
-  .container-fluid{    
-    font-weight: 300;      
+  .redes img {
+      width: 2.5vw;
+      margin-top: 5px;
   }
-  
-  
-  .caja1{
-      width: 1300px;
-  /*     height: 500px;  */
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 25px;
-      margin: 10px 0;
-      text-align: center;
-      margin-left: 10%;
+  .redes-zoom:hover{
+      transform: scale(1.5);
+  }
+  .redes ul li {
+      display: inline;
+      margin-left: 10px;
+  }
+  .redes ul li a {
+      text-decoration: unset;
+  }
+  &.producto{
+      margin-top: 5vh !important;
+  }
+  .row {
+      width: 100%;
+  }
+  .my-md-5 {
+      margin-top: unset !important;
+      margin-bottom: unset !important;
+  }
+  .bursatil{
+    font-family: 'Russo One', sans-serif;
+    color: #e5be01;
+    font-size: 2em;
+  }
+  @media only screen and ( min-width: 768px) and ( max-width: 1200px) {
+      &{
+          padding-left: 3vw;
+      }
+  }   
+  @media only screen and ( min-width: 600px) and ( max-width: 768px) {
+      &{
+          padding-left: 3vw;
+      }
+  }
+  @media only screen and ( max-width:600px) { 
+      &{
+          padding-left: 3vw;
+      }
+      .row{
+          margin-left: 2px;
+      } 
+      .redes img {
+          width: 4.5vw;
+      }
+  }
+}
 
-        img{
-            width: 100%;
-            height: 680px;
-            }
+// *FOOTER FIN* //
+
+
+
+
+
+
+  
+  
+//////////////////////////////////////// **INDEX** ////////////////////
+  
+.caja1{
+  width: 80%;
+  margin: 0% auto;      
+  font-family: 'Kalam', cursive;
+  gap: 2%;
+  font-size: 2.3em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));     
+}
+
+.imagencollage{
+  background: #833ab4;
+  background: linear-gradient(90deg, #e5be01 0%, #ff5520 50%, #F21365 100%);
+  padding: 3px;
+  
+  border-radius: 8px;
+}
+.imagencollage img{
+  border-radius: 5px;
+}
+
+//////////////////////////////////////// **INDEX FIN** ////////////////////
+
+
+
+
+//////////////////////////////////////// **PERFUMES** ////////////////////
+.btn1{
+  width: 100%;
+  margin: 0% auto;
+    .btn{
+      font-size: 1.7em ;
     }
-  
- 
+}
+.fotoperfume:hover {
+  transform: scale(1.04);
+  transition: 1s;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+}
+.container .heading{
+  width: 50%;
+  padding-bottom: 50px;
+}
+.container .heading h3{
+  font-size: 3em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #222;
+}
+.container .heading h3 span{
+  font-weight: 100;
+}
+.container .box{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+.container .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+.container .box .dream img{
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+.container .btn{
+  margin: 40px 0 70px 0;
+  background: #222;
+  padding: 15px 40px ;
+  border-radius: 5px;
+}
+.container .btn a{
+ color: #fff;
+ font-size: 1.2em;
+ text-decoration: none;
+ font-weight: bolder;
+ letter-spacing: 3px;
+}
+//////////////////////////////////////// **PERFUMES FIN** ////////////////////
 
 
 
 
-    .EmprendedoresGlobal{
-      margin-top: 25px;;
-      box-shadow: 2px 4px 10px 5px rgb(255, 174, 0);
-      background-color: rgba(12, 4, 4, 0.582);
-      text-align: center;
-    }  
 
-    .Emprendedorestitulo{
-      margin: 1%;
-      text-align: center;
-  }    
 
-    .Emprendedores0{
-      margin-left: 10%;
-      text-align: center;
-  }    
-
-    .Emprendedores1{
-      width: 1500px;
-  /*     height: 500px;  */
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 25px;
-      margin: 70px 0;
-      text-align: center;
-  
-        img{
-            width: 75%;
-            height: 470px;
-            }
+//////////////////////////////////////// **EMPRENDEDORES** ////////////////////
+.btn2{
+  width: 80%;
+  margin: 0% auto;
+    .btn{
+      font-size: 1.7em ;
     }
-  
-  
-  .Emprendedores2{
-      width: 1500px;
-  /*     height: 500px;  */
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 25px;
-      margin: 70px 0;
-      text-align: center;
-  
-        img{
-            width: 75%;
-            height: 470px;
+}  
+.EmprendedoresGlobal{  
+  box-shadow: 2px 4px 10px 5px rgb(255, 174, 0);
+  background-color: rgba(12, 4, 4, 0.582);
+  text-align: center;
+}
+.Emprendedores0{
+  width: 100%;
+  margin: 0% auto;
+  text-align: center;
+  font-family: 'Kalam', cursive;   
+    p{
+      color: #a9a9a9;   
+      font-size: 1.5em;
+      }
+} 
+.Emprendedores1{
+  width: 100%;
+  margin: 0% auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.1em;
+    video{
+        width: 75%;
+        height: 600px;
         }
-    }
-  
-  .Encuesta0{
+}
+.Emprendedores2{
+  width: 100%;
+  margin: 0% auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.1em;
+    video{
+        width: 75%;
+        height: 750px;
+        }
+}
+//////////////////////////////////////// **EMPRENDEDORES FIN** ////////////////////
+
+
+
+
+
+ 
+//////////////////////////////////////// **SORPRESA** ////////////////////
+
+// **CARTEL NEON** //  
+  .Comprar{
     margin-top: 25px;;
     box-shadow: 2px 4px 10px 5px rgb(255, 174, 0);
     background-color: rgba(12, 4, 4, 0.582);
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+  }
+  .Comprar h1{
+    position: relative;
+    font-size: 3em;
+    letter-spacing: 10px;
+    color: #F21365;
+    text-transform: uppercase;
+    width: 100%;
     text-align: center;
-  } 
-
- 
-
-  .Encuesta {
-      color: rgb(5, 5, 5);
-      background-color: #e5be01;
+    outline: none;
+    animation: animate 5s linear infinite;
+  }
+  @keyframes animate{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+      color: linear-gradient(1deg, #e5be01, #ff5520, #F21365);
+      text-shadow: none;
     }
-    
-  
-  h1{
-  color: $colorbg;
-  font-style: oblique;
-  font-weight:bolder;
-  font-size: 60px;
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+      color:#e5be01;
+      text-shadow: 0 0 10px rgb(0, 0, 0),
+      0 0 20px #F21365,
+      0 0 40px #F21365,
+      0 0 80px #F21365,
+      0 0 160px #F21365,
+    }
   }
+// **CARTEL NEON FIN** //
+//////////////////////////////////////// **SORPRESA FIN** ////////////////////
+
   
-  h2{
-      color:rgb(243, 248, 197);
-      text-align-last: left; 
-      font-family: 'Fredoka One', cursive;
-  }
-  
-  
-  h3{
-      color:rgb(255, 255, 255);
-      font-family: 'Caveat', cursive;
-      background-color: rgb(29, 27, 27);
-  
-  }
-  
-  
-  p{    
-    font-size: 150%;
-    color:hsl(0, 0%, 100%);
-  }    
-  
-  
-   a:hover{
-       color: rgb(0, 0, 0);
-       background-color: rgb(237, 219, 127);
-       
-      } 
-  
-  input:hover{
-          color: rgb(253, 255, 253);
-          background-color: rgb(160, 156, 133);
-  } 
 
 
 
 
-
+//////////////////////////////////////// **CONTACTO** ////////////////////
   .contactenos{
     position: relative;
     width: 100%;
@@ -211,8 +371,8 @@ body{
     justify-content: center;
     align-items: center;
     padding: 20px 100px;    
-  }
-  
+    font-family: 'Kalam', cursive;
+  }  
   .contactenos:after{
     content: '';
     position: absolute;
@@ -231,36 +391,16 @@ body{
     text-align: center;
     background-color: rgb(80, 75, 75);
     box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
-  }
-  
+    font-family: 'Kalam', cursive;
+  }  
   .contactenos3{
     background: url("../img/Contactenos.jpg") no-repeat center;
     background-size: cover;
     height: 100%;
-  }
-  
+  }  
   .contactenos4{
     padding: 25px 40px;
-  }
-  
-  h2{    
-    position: relative;
-    padding: 0 0 10px;
-    margin-bottom: 10px;
-  }
-  
-  h2:after{
-    content: '';
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      transform: translateX(-50%);
-      height: 4px;
-      width: 50px;
-      border-radius: 2px;
-      background-color: rgb(255, 174, 0);
-  }
-  
+  }  
   .contactenos5{
     width: 100%;
     border: 2px solid rgb(255, 174, 0);
@@ -270,16 +410,13 @@ body{
     font-size: 1.1rem;
     margin-bottom: 22px;
     transition: .3s;
-  }
-  
+  }  
   .contactenos5:hover{
     background-color: rgba(0, 0, 0, 0.1);
-  }
-  
+  }  
   textarea{
     min-height: 150px;
   }
-  
   .btn{
     width: 100%;
     padding: 0.5rem 1rem;
@@ -290,403 +427,106 @@ body{
     outline: none;
     cursor: pointer;
     transition: .3s;
-  }
-  
+  }  
   .btn:hover{
-      background-color: rgb(255, 174, 0);
+      background-color: rgb(255, 174, 0);      
   }
-  
   .contactenos5:focus{
       border: 2px solid rgb(255, 174, 0);
       background-color: #fff;
   }
-  
-  @media screen and (max-width: 880px){
-    .contactenos2{
-      grid-template-columns: 1fr;
-    }
-    .contactenos3{
-      height: 200px;
-    }
-  }
+//////////////////////////////////////// **CONTACTO FIN** ////////////////////
 
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
- 
-  
-  
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;  
+@media only screen and ( max-width:600px) {   
+  // *NAVBAR* //
+#navbarSupportedContent{
+  padding: 5%;  
+  font-size: 1.2em;
+}  
+// *INDEX* //
+.caja1{
+  font-size: 1.4em;   
 }
 
-.container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 40px 20px 0 20px;
-}
-
-.container .heading{
-  width: 50%;
-  padding-bottom: 50px;
-}
-.container .heading h3{
-  font-size: 3em;
-  font-weight: bolder;
-  padding-bottom: 10px;
-  border-bottom: 3px solid #222;
-}
-
-.container .heading h3 span{
-  font-weight: 100;
-}
-.container .box{
- display: flex;
- flex-direction: row;
- justify-content: space-between;
-}
-
-.container .box .dream{
-  display: flex;
-  flex-direction: column;
-  width: 32.5%;
-}
-
-.container .box .dream img{
+// *EMPRENDEDORES* //
+.Emprendedores1{
   width: 100%;
-  padding-bottom: 15px;
-  border-radius: 5px;
-}
-
-.container .btn{
-  margin: 40px 0 70px 0;
-  background: #222;
-  padding: 15px 40px ;
-  border-radius: 5px;
-}
-
-.container .btn a{
- color: #fff;
- font-size: 1.2em;
- text-decoration: none;
- font-weight: bolder;
- letter-spacing: 3px;
-}
-@media only screen and (max-width: 576px){
-  .Portada1{
-    width: 100%;
-    margin-left: 0%;
-  }
-
-  .caja1{
-    width: 280px;
-/*     height: 500px;  */
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 25px;
-    margin: 10px 0;
-    text-align: center;
-    margin-left: 10%;
-
-      img{
-          width: 100%;
-          height: auto;
-          }
-  }
-
-  .EmprendedoresGlobal{
-    margin-top: 25px;
-    box-shadow: 2px 4px 10px 5px rgb(255, 174, 0);
-    background-color: rgba(12, 4, 4, 0.582);
-    text-align: center;
-  }  
-
-  .Emprendedorestitulo{
-    margin: 1%;
-    text-align: center;
-}    
-
-  .Emprendedores0{
-    margin-left: 10%;
-    text-align: center;
-}    
-
-  .Emprendedores1{
-    width: 400px;
-/*     height: 500px;  */
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0px 0;
-    text-align: center;    
-
-      img{
-          width: 95%;
-          height: 470px;           
-          }
-  }
-
-  .Emprendedores2{
-    width: 400px;
-    /*     height: 500px;  */
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: 0px 0;
-        text-align: center;
-  
-        img{
-            width: 95%;
-            height: 470px;
+  margin: 0% auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 1em;
+    video{
+        width: 75%;
+        height: 600px;
         }
-    }
-    
-    .Foosterimg{
-      width: 120%;
-      height: 90%;
-      object-fit:contain;   
-    }
-
-    .Redes{
-      width: 25%;
-      height: 14%;
-    }
-    
-
-  
 }
-
-@media only screen and (min-width: 576px){
-  .Portada1{
-    width: 100%;
-    margin-left: 0%;
-  }
-
-  .caja1{
-    width: 450px;
-/*     height: 500px;  */
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 25px;
-    margin: 10px 0;
-    text-align: center;
-    margin-left: 10%;
-
-      img{
-          width: 100%;
-          height: auto;
-          }
-  }
-
-  .EmprendedoresGlobal{
-    margin-top: 25px;
-    box-shadow: 2px 4px 10px 5px rgb(255, 174, 0);
-    background-color: rgba(12, 4, 4, 0.582);
-    text-align: center;
-  }  
-
-  .Emprendedorestitulo{
-    margin: 1%;
-    text-align: center;
-}    
-
-  .Emprendedores0{
-    margin-left: 10%;
-    text-align: center;
-}    
-
-  .Emprendedores1{
-    width: 400px;
-/*     height: 500px;  */
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0px 0;
-    text-align: center;    
-
-      img{
-          width: 95%;
-          height: 470px;           
-          }
-  }
-
-  .Emprendedores2{
-    width: 400px;
-    /*     height: 500px;  */
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: 0px 0;
-        text-align: center;
-  
-        img{
-            width: 95%;
-            height: 470px;
-        }
-    }
-    
-    .Foosterimg{
-      width: 120%;
-      height: 90%;
-      object-fit:contain;   
-    }
-
-    .Redes{
-      width: 25%;
-      height: 14%;
-    }
-    
-
-  
-}
-
-@media only screen and (max-width: 769px){
-    .container .box{
-   flex-direction: column;
-  }
-
-.container .box .dream{
+.Emprendedores2{
   width: 100%;
+  margin: 0% auto;
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 1em;
+    video{
+        width: 75%;
+        height: 750px;
+        }
+}
 }
 
 
-
-
-
-}
 
 @media only screen and (max-width: 643px){
-.container .heading{
-  width: 100%;
-}
-.container .heading h3{
-  font-size: 1em;
-
+  .container .heading{
+    width: 100%;
+  }
 }
 
-
-
-
-
-
-
+  
+@media only screen and (max-width: 769px){
+ .container .box{
+   flex-direction: column;
+  }
+ .container .box .dream{
+   width: 100%;
+  }
 }
+
 
 @media screen and (max-width: 880px){
-    .contactenos2{
-      grid-template-columns: 1fr;
-    }
-    .contactenos3{
-      height: 200px;
-    }
+  .contactenos2{
+    grid-template-columns: 1fr;
+  }
+  .contactenos3{
+    height: 200px;
+  }
 }
 
-@media only screen and (min-width: 992px){
-  .Portada1{
-    width: 90%;
-    margin-left: 4%;
-  }    
-
-  .caja1{
-    width: 850px;
-/*     height: 500px;  */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-    margin: 10px 0;
-    text-align: center;
-    margin-left: 7%;
-
-      img{
-          width: 100%;
-          height: auto;
-          }
-  }
-
-  .EmprendedoresGlobal{
-    margin-top: 25px;;
-    box-shadow: 2px 4px 10px 5px rgb(255, 174, 0);
-    background-color: rgba(12, 4, 4, 0.582);
-    text-align: center;
-  }  
-
-  .Emprendedorestitulo{
-    margin: 1%;
-    text-align: center;
-}    
-
-  .Emprendedores0{
-    margin-left: 0%;
-    text-align: center;
-}    
-
-  .Emprendedores1{
-    width: 1200px;
-/*     height: 500px;  */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;    
-    text-align: center;
-
-      img{
-          width: 75%;
-          height: 470px;
-          }
-  }
 
 
-.Emprendedores2{
-    width: 1200px;
-/*     height: 500px;  */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-    margin: 70px 0;
-    text-align: center;
 
-      img{
-          width: 75%;
-          height: 470px;
+@media only screen and ( min-width: 1200px) and ( max-width: 1600px) {   
+// *NAVBAR* //
+#navbarSupportedContent{
+  padding: 2%;  
+  font-size: 1.2em;
+}
+.navbar{
+  padding-right: 1%;
+}  
+// *INDEX* //
+.caja1{
+  font-size: 1.6em;   
+}
+// *EMPRENDEDORES* //
+.btn2{
+    .btn{
+      font-size: 1.6em ;
+    }
+}  
+.Emprendedores0{  
+    p{      
+      font-size: 1.4em;
       }
-  }
-
-  .Foosterimg{
-    width: 80%;
-    height: 80%;
-    object-fit:contain;   
-  }
-  
-  .Redes{
-    width: 10%;
-    height: 10%;
-  }
-}
-
-@media only screen and (min-width: 1200px){
-
-  .caja1{
-    width: 1100px;
-/*     height: 500px;  */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-    margin: 20px 0;
-    text-align: center;
-    margin-left: 8%;
-
-      img{
-          width: 100%;
-          height: auto;
-          }
-  }
+} 
 }
