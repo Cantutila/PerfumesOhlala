@@ -80,7 +80,8 @@ footer {
   width: 100%;
   padding-left: 1vw;
   background-image: url("../img/Navbar.gif");
-  color: #6c757d; }
+  color: #6c757d;
+  font-size: 1.2em; }
   footer .navbar-brand img {
     width: 150px; }
   footer .redes img {
@@ -332,7 +333,7 @@ textarea {
 
 .contactenos5:focus {
   border: 2px solid #ffae00;
-  background-color: #fff; }
+  background-color: rgba(170, 164, 164, 0.338); }
 
 @media only screen and (max-width: 600px) {
   #navbarSupportedContent {
@@ -357,7 +358,9 @@ textarea {
     font-size: 1em; }
     .Emprendedores2 video {
       width: 75%;
-      height: 750px; } }
+      height: 750px; }
+  footer {
+    font-size: 1.1em; } }
 
 @media only screen and (max-width: 643px) {
   .container .heading {
@@ -386,4 +389,6 @@ textarea {
   .btn2 .btn {
     font-size: 1.6em; }
   .Emprendedores0 p {
-    font-size: 1.4em; } }
+    font-size: 1.4em; }
+  footer {
+    font-size: 1.1em; } }
